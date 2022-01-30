@@ -32,4 +32,4 @@ Este MAIN requisitará 3 informações:
   * Quantas raias há
 
 ### Observação
-* A saída no console de cada operação de corredor é definida no arquivo /main/constants.go
+* A saída no console de cada operação de corredor é definida no arquivo `/main/constants.go`
