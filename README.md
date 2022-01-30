@@ -25,7 +25,7 @@ Simulação de uma corrida de revezamento em que uma equipe possui x corredores.
 
 ## Execução
 
-O programa possui um único método Main.
+Foi utilizado o Go 1.17. O programa possui um único método Main.
 Este MAIN requisitará 3 informações:
   * Quantos metros tem a corrida (Somente a título de informação)
   * Quantos corredores há por raia
