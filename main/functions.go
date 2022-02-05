@@ -3,8 +3,11 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"sync"
 	"time"
 )
+
+var mutex = &sync.RWMutex{}
 
 func nilInitializer() interface{} {
 	return nil
@@ -115,6 +118,8 @@ func Correr(dto CorrerDTO) {
 }
 
 func avisarConcluiu(raia *Raia, podio *ControleLugarPodio) {
+	mutex.Lock()
 	fmt.Printf("\t*** raia %d chegou em %dº Lugar\n", raia.id, podio.lugar)
 	podio.lugar++
+	mutex.Unlock()
 }
